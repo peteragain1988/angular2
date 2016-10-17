@@ -1,0 +1,47 @@
+.appointment-list-container {
+	background-color: rgb(255, 229, 154);
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.appointment-list {
+	margin-bottom: 10px;
+}
+
+.appointment-title {
+	font-family: "Arial";
+	font-weight: bold;
+	font-size: 20px;
+	padding: 10px 15px;
+}
+
+.list-group-item {
+	background-color: inherit;
+	border-width: 0px;
+	padding: .5rem .75rem;
+}
+
+.appointment-circle {
+	display: inline-block;
+	width: 20px;
+	vertical-align: top;
+}
+
+.appointment-circle i.fa-circle {
+	/*margin-top: 5px;*/
+}
+
+.appointment-contents {
+	display: inline-block;
+	width: calc(100% - 30px);
+}
+
+.appointment-date, .appointment-subject {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

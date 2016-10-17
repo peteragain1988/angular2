@@ -1,0 +1,19 @@
+<div class="{{baseClass}}">
+	<div class="{{titleClass}}">
+		{{titleText}}
+	</div>
+	<div class="appointment-list">
+		<ul class="list-group">
+			<li class="list-group-item" *ngFor="let apmt of appointments">
+				<div class="appointment-circle">
+					<i class="fa fa-circle" aria-hidden="true" [style.color]="apmt.color"></i>
+				</div>
+				<div class="appointment-contents">
+					<div class="{{appointmentClass}}" ngbTooltip="{{apmt.tooltip}}" placement="top">{{apmt.date}}</div>
+					<div class="{{subjectClass}}" *ngIf="apmt.subject"  ngbTooltip="{{apmt.tooltip}}" placement="top">{{apmt.subject}}</div>
+					<div class="{{subjectClass}}" *ngIf="!apmt.subject" ngbTooltip="{{apmt.tooltip}}" placement="top">{{apmt.description}}</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
